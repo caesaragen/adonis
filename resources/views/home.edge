@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title></title>
+  <style>
+    * { margin: 0; padding: 0; }
+    .header { height: 60px; background: rgba(255,138,0,.2); }
+    .layout { height: calc(100vh - 100px); display: flex; }
+    .sidebar { height: 100%; background: rgba(156, 39, 176, 0.2); width: 250px; }
+    main { height: 100%; background: #f7f7f7; flex: 1 }
+    .footer { height: 40px; background: #5e5e5e; }
+  </style>
+</head>
+<body>
+  @include('partials/header')
+
+  <section class="layout">
+    @include('partials/sidebar')
+    <main></main>
+  </section>
+
+  @include('partials/footer')
+</body>
+</html>
